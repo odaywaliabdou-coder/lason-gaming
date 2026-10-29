@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LASON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- الهيدر -->
+    <header class="header">
+
+        <div class="logo">
+            <span>⚡</span>
+
+            <div>
+                <h1>LASON</h1>
+                <small>Gaming Store</small>
+            </div>
+        </div>
+
+
+        <div class="search">
+            🔍
+          <input type="text" id="siteSearch" placeholder="ابحث عن لعبة، بطاقة..." oninput="searchSite()">
+        </div>
+
+
+        <div class="icons">
+            🛒
+            🔔
+            👤
+        </div>
+
+    </header>
+
+  
+
+    <!-- القائمة -->
+    <nav class="nav">
+
+      <a href="#home">الرئيسية</a>
+<a href="#games">متجر الألعاب</a>
+<a href="#pubg-topup">شحن الألعاب</a>
+<a href="#gift-cards" onclick="document.getElementById('gift-cards').scrollIntoView({behavior:'smooth', block:'start'}); return false;">بطاقات هدايا</a>
+<a href="#offers">العروض</a>
+
+    </nav>
+
+
+    <main>
+
+      <!-- LASON HERO -->
+<section class="lason-hero">
+
+    <div class="lason-hero-content">
+
+        <div class="lason-badge">
+            ⚡ LASON GAMING
+        </div>
+
+        <h1>
+            عالم الألعاب
+            <br>
+            <span>بطابع مختلف.</span>
+        </h1>
+
+        <p>
+            شحن ألعابك، بطاقات الهدايا والعروض
+            <br>
+            كلها في مكان واحد.
+        </p>
+
+        <button
+            class="lason-hero-btn"
+            onclick="document.querySelector('.section').scrollIntoView({behavior:'smooth'})">
+            تسوق الآن ←
+        </button>
+
+    </div>
+
+    <div class="lason-hero-visual">
+
+        <div class="lason-hero-glow"></div>
+
+        <img
+            src="https://i.postimg.cc/Pr76kL6c/file-000000000bb48246aa7f3695e2ca20e3.png"
+            alt="LASON Robot">
+
+    </div>
+
+</section>
+
+
+        <!-- أحدث الألعاب -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <h2>🎮 متجر الألعاب</h2>
+
+                <button>
+                    عرض الكل
+                </button>
+
+            </div>
+
+
+            <div class="products">
+
+
+              <!-- PUBG -->
+<div class="product">
+
+    <div class="game-image pubg">
+        <img src="https://i.postimg.cc/qBx05SqR/1791311487465.jpg" alt="PUBG Mobile">
+    </div>
+
+    <h3>PUBG Mobile</h3>
+
+    <p>شحن UC</p>
+
+    <div class="product-bottom">
+        <button type="button" onclick="openGame('PUBG Mobile')">ابدأ الآن</button>
+    </div>
+
+</div>
+
+
+              <!-- Roblox -->
+<div class="product">
+
+    <div class="game-image roblox">
+        <img src="https://i.postimg.cc/8PpXPnHk/46873ef42902ca743b142f649f5e2613.jpg" alt="Roblox">
+    </div>
+
+    <h3>Roblox</h3>
+
+    <p>Robux</p>
+
+    <div class="product-bottom">
+        <strong>قريبًا</strong>
+    </div>
+
+</div>
+
+
+              <!-- Fortnite -->
+<div class="product">
+
+    <div class="game-image fortnite">
+        <img src="https://i.postimg.cc/13w8Lrjv/657f668d1366f696a0bf5e98f221b45d.jpg" alt="Fortnite">
+    </div>
+
+    <h3>Fortnite</h3>
+
+    <p>شحن V-Bucks</p>
+
+    <div class="product-bottom">
+        <strong>قريبًا</strong>
+    </div>
+
+</div>
+
+              <!-- FC Mobile -->
+<div class="product">
+
+    <div class="game-image">
+      <img src="https://i.postimg.cc/x8NmqD6j/80243c32eb220a3028ca82a70a993136-(1).jpg" alt="FC Mobile">
+    </div>
+
+    <h3>FC Mobile</h3>
+
+    <p>شحن FC Points</p>
+
+    <div class="product-bottom">
+        <strong>قريبًا</strong>
+    </div>
+
+</div>
+
+              <!-- eFootball -->
+<div class="product">
+
+    <div class="game-image">
+        <img src="https://i.postimg.cc/dtnd5BgQ/1791312896038.jpg" alt="eFootball">
+    </div>
+
+    <h3>eFootball</h3>
+
+    <p>لعبة كرة القدم</p>
+
+    <div class="product-bottom">
+        <strong>قريبًا</strong>
+    </div>
+
+</div>
+              <!-- Call of Duty Mobile -->
+<div class="product">
+
+    <div class="game-image">
+        <img src="https://i.postimg.cc/bwC5f1S8/588213464b482504eb90d14d0a53b129.jpg" alt="Call of Duty Mobile">
+    </div>
+
+    <h3>Call of Duty Mobile</h3>
+
+    <p>شحن CP</p>
+
+    <div class="product-bottom">
+        <strong>قريبًا</strong>
+    </div>
+
+</div>
+
+              <!-- Free Fire -->
+<div class="product">
+
+    <div class="game-image">
+        <img src="https://i.postimg.cc/cCdqL0xZ/e7f563ded47e0e0d51fb194f4de06e72.jpg" alt="Free Fire">
+    </div>
+
+    <h3>Free Fire</h3>
+
+    <p>شحن Diamonds</p>
+
+    <div class="product-bottom">
+        <strong>🔥 قريبًا</strong>
+    </div>
+
+</div>
+        </section>
+
+
+        <!-- شحن الألعاب -->
+              <section class="section" id="games">
+
+            <div class="section-title">
+
+                <h2>⚡ شحن الألعاب</h2>
+              <p class="section-subtitle">
+    اشحن ألعابك بسرعة وسهولة
+              </p>
+
+                <button>
+                    عرض الكل
+                </button>
+
+            </div>
+
+
+            <div class="topup-grid">
+
+
+                <!-- PUBG -->
+                <div class="topup-card">
+
+                  <div class="topup-logo pubg-logo">
+    <img src="https://i.postimg.cc/qBx05SqR/1791311487465.jpg" alt="PUBG Mobile">
+                  </div>
+
+                    <h3>PUBG MOBILE</h3>
+
+                    <p>شحن UC</p>
+
+                    <button onclick="openGame('PUBG Mobile')">
+                        اشحن الآن
+                    </button>
+<div class="game-status">
+    ● متاح الآن
+</div>
+                </div>
+
+
+                <!-- Roblox -->
+                <div class="topup-card coming">
+
+                  <div class="topup-logo roblox-logo">
+    <img src="https://i.postimg.cc/8PpXPnHk/46873ef42902ca743b142f649f5e2613.jpg" alt="Roblox">
+                  </div>
+
+                    <h3>ROBLOX</h3>
+
+                    <p>شحن Robux</p>
+
+                    <button disabled>
+                        قريبًا
+                    </button>
+
+                </div>
+
+
+                <!-- Fortnite -->
+                <div class="topup-card coming">
+
+                  <div class="topup-logo">
+    <img src="https://i.postimg.cc/13w8Lrjv/657f668d1366f696a0bf5e98f221b45d.jpg" alt="Fortnite">
+                  </div>
+
+                    <h3>FORTNITE</h3>
+
+                    <p>شحن V-Bucks</p>
+
+                    <button disabled>
+                        قريبًا
+                    </button>
+
+                </div>
+              <!-- eFootball -->
+<div class="topup-card coming">
+
+  <div class="topup-logo">
+    <img src="https://i.postimg.cc/dtnd5BgQ/1791312896038.jpg" alt="eFootball">
+  </div>
+
+    <h3>eFootball</h3>
+
+    <p>شحن عملات eFootball</p>
+
+    <button disabled>
+        قريبًا
+    </button>
+
+</div
+
+<!-- Call of Duty Mobile -->
+<div class="topup-card coming">
+
+  <div class="topup-logo">
+    <img src="https://i.postimg.cc/bwC5f1S8/588213464b482504eb90d14d0a53b129.jpg" alt="Call of Duty Mobile">
+  </div>
+
+    <h3>Call of Duty Mobile</h3>
+
+    <p>شحن CP</p>
+
+    <button disabled>
+        قريبًا
+    </button>
+
+</div>
+
+<!-- Free Fire -->
+<div class="topup-card coming">
+
+  <div class="topup-logo">
+    <img src="https://i.postimg.cc/cCdqL0xZ/e7f563ded47e0e0d51fb194f4de06e72.jpg" alt="Free Fire">
+  </div>
+
+    <h3>Free Fire</h3>
+
+    <p>شحن Diamonds</p>
+
+    <button disabled>
+        قريبًا
+    </button>
+
+</div>
+<!-- FC Mobile -->
+<div class="topup-card coming">
+
+  <div class="topup-logo">
+    <img src="https://i.postimg.cc/x8NmqD6j/80243c32eb220a3028ca82a70a993136-(1).jpg" alt="FC Mobile">
+  </div>
+
+    <h3>FC Mobile</h3>
+
+    <p>شحن FC Points</p>
+
+    <button disabled>
+        قريبًا
+    </button>
+
+</div>
+
+                <!-- المزيد -->
+                <div class="topup-card coming">
+
+                    <div class="topup-logo">
+                        🎮
+                    </div>
+
+                    <h3>المزيد قريبًا</h3>
+
+                    <p>ألعاب جديدة</p>
+
+                    <button disabled>
+                        قريبًا
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+      <!-- صفحة شحن PUBG -->
+      <section class="section" id="pubg-topup" style="display: none;">
+
+    <div class="section-title">
+        <h2>⚡ شحن PUBG Mobile</h2>
+    </div>
+
+    <div class="topup-grid">
+
+        <div class="topup-card">
+            <div class="topup-logo pubg-logo">60 UC</div>
+            <h3>60 UC</h3>
+            <p>باقة PUBG Mobile</p>
+            <h3>50 جنيه</h3>
+            <button onclick="selectPackage('60 UC')">
+                اختيار الباقة
+            </button>
+        </div>
+
+        <div class="topup-card">
+            <div class="topup-logo pubg-logo">325 UC</div>
+            <h3>325 UC</h3>
+            <p>باقة PUBG Mobile</p>
+            <h3>255 جنيه</h3>
+            <button onclick="selectPackage('325 UC')">
+                اختيار الباقة
+            </button>
+        </div>
+
+        <div class="topup-card">
+            <div class="topup-logo pubg-logo">660 UC</div>
+            <h3>660 UC</h3>
+            <p>باقة PUBG Mobile</p>
+            <h3>510 جنيه</h3>
+            <button onclick="selectPackage('660 UC')">
+                اختيار الباقة
+            </button>
+        </div>
+
+        <div class="topup-card">
+            <div class="topup-logo pubg-logo">1800 UC</div>
+            <h3>1800 UC</h3>
+            <p>باقة PUBG Mobile</p>
+            <h3>1280 جنيه</h3>
+            <button onclick="selectPackage('1800 UC')">
+                اختيار الباقة
+            </button>
+        </div>
+
+        <div class="topup-card">
+            <div class="topup-logo pubg-logo">3850 UC</div>
+            <h3>3850 UC</h3>
+            <p>باقة PUBG Mobile</p>
+            <h3>2560 جنيه</h3>
+            <button onclick="selectPackage('3850 UC')">
+                اختيار الباقة
+            </button>
+        </div>
+
+    </div>
+
+</>
+    </main>
+<!-- نافذة إدخال Player ID -->
+<div class="modal" id="playerModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal" onclick="closePlayerModal()">×</button>
+
+        <div class="modal-icon">
+            🎮
+        </div>
+
+        <h2>شحن PUBG Mobile</h2>
+
+        <p class="modal-subtitle">
+            أدخل Player ID لإكمال الطلب
+        </p>
+
+        <div class="selected-package" id="selectedPackage">
+            الباقة: -
+        </div>
+
+        <label>Player ID</label>
+
+      
+<input
+    type="text"
+    id="playerId"
+    placeholder="أدخل Player ID (11 رقم على الأقل)"
+    inputmode="numeric"
+    pattern="[0-9]{11,}"
+    minlength="11"
+    required
+>
+      <p id="playerIdError" class="id-error"></p>
+
+
+        <button class="continue-btn" onclick="continueOrder()">
+            متابعة
+        </button>
+
+    </div>
+
+</div>
+<!-- مراجعة الطلب -->
+<section class="section order-review" id="orderReview">
+
+    <div class="section-title">
+        <h2>🧾 مراجعة الطلب</h2>
+    </div>
+
+    <div class="order-box">
+
+        <div class="order-row">
+            <span>اللعبة</span>
+            <strong>PUBG Mobile</strong>
+        </div>
+
+        <div class="order-row">
+            <span>الباقة</span>
+            <strong id="reviewPackage">-</strong>
+        </div>
+
+        <div class="order-row">
+            <span>Player ID</span>
+            <strong id="reviewPlayerId">-</strong>
+        </div>
+
+        <div class="order-row">
+            <span>السعر</span>
+            <strong id="reviewPrice">-</strong>
+        </div>
+
+        <div class="order-payment">
+            <h3>طريقة الدفع</h3>
+
+            <button type="button">
+                💵 الدفع عند التأكيد
+            </button>
+
+            <small>
+                الدفع الحقيقي سيتم إضافته لاحقًا.
+            </small>
+        </div>
+
+      <button class="confirm-order" type="button">
+    تأكيد الطلب
+</button>
+
+<button class="cancel-order" type="button" onclick="cancelOrder()">
+    إلغاء الطلب
+</button>
+
+    </div>
+
+</section>
+    <!-- الفوتر -->
+    <footer>
+
+        <h2>⚡ LASON</h2>
+
+        <p>
+            Gaming Store
+        </p>
+
+        <small>
+            © 2026 LASON
+        </small>
+
+    </footer>
+
+<!-- العروض -->
+<section class="section" id="offers">
+
+    <div class="section-title">
+        <h2>🔥 العروض</h2>
+        <p class="section-subtitle">أفضل العروض قريبًا</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+            <div class="game-image">🔥</div>
+            <h3>عروض PUBG Mobile</h3>
+            <p>عروض وشحن UC</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="game-image">🎁</div>
+            <h3>عروض بطاقات الهدايا</h3>
+            <p>خصومات على البطاقات</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="game-image">⚡</div>
+            <h3>عروض خاصة</h3>
+            <p>عروض LASON الجديدة</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+<div class="success-modal" id="successModal">
+    <div class="success-box">
+        <div class="success-icon">✓</div>
+
+        <h2>تم استلام طلبك</h2>
+
+        <p>طلبك اتسجل بنجاح وسيتم مراجعته.</p>
+
+        <div class="success-details">
+            <div>
+                <span>اللعبة</span>
+                <strong>PUBG Mobile</strong>
+            </div>
+
+            <div>
+                <span>الباقة</span>
+                <strong id="successPackage">-</strong>
+            </div>
+
+            <div>
+                <span>Player ID</span>
+                <strong id="successPlayerId">-</strong>
+            </div>
+        </div>
+
+        <button onclick="closeSuccessModal()">تمام</button>
+    </div>
+</div>
+      <section class="section" id="gift-cards" style="scroll-margin-top: 100px;">
+
+    <div class="section-title">
+        <h2>🎁 بطاقات الهدايا</h2>
+        <p class="section-subtitle">بطاقات ألعاب ومنصات مختلفة قريبًا</p>
+    </div>
+
+    <div class="products">
+
+        <div class="product">
+          <div class="game-image">
+    <img src="https://i.postimg.cc/cLz2pfPD/04ea7e963427515853e42000b8fa863d.jpg" alt="PlayStation">
+          </div>
+            <h3>PlayStation</h3>
+            <p>بطاقات PlayStation</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+
+        <div class="product">
+          <div class="game-image">
+    <img src="https://i.postimg.cc/8P5yTjdT/a7b1949fb3ff84878bcdd2dbc3f273a7.jpg" alt="Steam">
+          </div>
+            <h3>Steam</h3>
+            <p>بطاقات Steam</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+
+        <div class="product">
+          <div class="game-image">
+    <img src="https://i.postimg.cc/8PpXPnHk/46873ef42902ca743b142f649f5e2613.jpg" alt="Roblox">
+          </div>
+            <h3>Roblox</h3>
+            <p>بطاقات Robux</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+
+        <div class="product">
+          <div class="game-image">
+    <img src="https://i.postimg.cc/13w8Lrjv/657f668d1366f696a0bf5e98f221b45d.jpg" alt="Fortnite">
+          </div>
+            <h3>Fortnite</h3>
+            <p>بطاقات V-Bucks</p>
+            <div class="product-bottom">
+                <strong>قريبًا</strong>
+            </div>
+        </div>
+      <div class="product">
+        <div class="game-image">
+    <img src="https://i.postimg.cc/zDPCSphQ/69af1b021e6fe4d37383f80cdaf0cc26.jpg" alt="Xbox">
+        </div>
+    <h3>Xbox</h3>
+    <p>بطاقات Xbox</p>
+    <div class="product-bottom">
+        <strong>قريبًا</strong>
+    </div>
+      </div>
+    </div>
+    </div>
+</body>
+
+</html>
